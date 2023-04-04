@@ -1,8 +1,8 @@
 POST https://localhost:7119/auth/register
 Content-Type: application/app
 {
-  "firstName":"v",
+  "firstName":"v53535",
   "lastName": "vvv"
-  "email": "hdjhdsdd"
+  "email": "hdjhdsdd@gmai.com"
   "password":"dfsf"
 }

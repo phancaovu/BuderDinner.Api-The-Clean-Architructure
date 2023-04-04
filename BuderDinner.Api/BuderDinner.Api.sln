@@ -3,22 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuderDinner.Api", "BuderDinner.Api.csproj", "{A94E3649-F3E6-493C-99F4-3860FE9D1150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuderDinner.Api", "BuderDinner.Api.csproj", "{A94E3649-F3E6-493C-99F4-3860FE9D1150}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Domain", "..\BuberDinner.Domain\BuberDinner.Domain.csproj", "{6C7A32BC-AE5F-4962-9ACC-ECA48BF13E74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Domain", "..\BuberDinner.Domain\BuberDinner.Domain.csproj", "{6C7A32BC-AE5F-4962-9ACC-ECA48BF13E74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Application", "..\BuberDinner.Application\BuberDinner.Application.csproj", "{046100CF-CF40-4035-9649-F06A77C714AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Application", "..\BuberDinner.Application\BuberDinner.Application.csproj", "{046100CF-CF40-4035-9649-F06A77C714AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Contracts", "..\BuberDinner.Contracts\BuberDinner.Contracts.csproj", "{8A44F3A7-902B-4F99-975F-8D221FC02DA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Contracts", "..\BuberDinner.Contracts\BuberDinner.Contracts.csproj", "{8A44F3A7-902B-4F99-975F-8D221FC02DA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Infrastructure", "..\BuberDinner.Infrastructure\BuberDinner.Infrastructure.csproj", "{C398E4FC-6BE5-4A30-950F-C4B106420BC8}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Request", "Request", "{E8C8C280-41A4-4573-BBB1-D54D96B7E1A4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forcast", "Forcast", "{351AFB96-67DF-423A-B431-0F076FFFC4F8}"
-	ProjectSection(SolutionItems) = preProject
-		weather.http = weather.http
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Infrastructure", "..\BuberDinner.Infrastructure\BuberDinner.Infrastructure.csproj", "{C398E4FC-6BE5-4A30-950F-C4B106420BC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,9 +42,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{351AFB96-67DF-423A-B431-0F076FFFC4F8} = {E8C8C280-41A4-4573-BBB1-D54D96B7E1A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {349426C5-224C-493E-AF3A-D50FFACAB008}

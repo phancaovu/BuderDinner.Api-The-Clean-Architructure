@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
+using BuberDinner.Domain.Entities;
 
 namespace BuberDinner.Application.Common.Interface.Persistence
 {
-    internal interface IUserReponsitory
+    public interface IUserReponsitory
     {
-      
+        User? GetUserByEmail(string username);
+        void Add(User user);
     }
 }

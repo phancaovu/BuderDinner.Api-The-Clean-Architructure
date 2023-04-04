@@ -12,5 +12,8 @@ namespace BuberDinner.Contracts.Authentication
      string LastName,
      string Email,
      string Token
-     );
+     )
+    {
+      
+    }
 }

@@ -1,0 +1,8 @@
+POST https://localhost:7119/auth/register
+Content-Type: application/app
+{
+  "firstName":"v",
+  "lastName": "vvv"
+  "email": "hdjhdsdd"
+  "password":"dfsf"
+}

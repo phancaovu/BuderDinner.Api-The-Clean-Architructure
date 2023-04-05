@@ -6,7 +6,7 @@ namespace BuberDinner.Application.Common.Interface.Persistence
 {
     public interface IUserReponsitory
     {
-        User? GetUserByEmail(string username);
+        User? GetUserByEmail(string email);
         void Add(User user);
     }
 }

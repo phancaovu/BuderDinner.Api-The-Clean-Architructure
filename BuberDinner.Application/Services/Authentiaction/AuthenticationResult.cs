@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BuberDinner.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,10 +8,11 @@ using System.Threading.Tasks;
 namespace BuberDinner.Application.Services.Authentiaction
 {
     public record AuthentiactionResult(
-    Guid Id,
+   /* Guid Id,
     string FirstName,
     string LastName,
-    string Email,
+    string Email,*/
+    User User,
     string Token
     );
 }

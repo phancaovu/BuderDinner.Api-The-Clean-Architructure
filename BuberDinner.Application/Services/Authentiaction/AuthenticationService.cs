@@ -19,7 +19,7 @@ namespace BuberDinner.Application.Services.Authentiaction
         {
             // 1 check if user already exits
             if(_userReponsitory.GetUserByEmail(email) is not null) {
-                throw new Exception("USER đã tồn tại")
+                throw new Exception("USER đã tồn tại");
             }
             //2 create user (generate unique ID)
             var user = new User
@@ -32,13 +32,14 @@ namespace BuberDinner.Application.Services.Authentiaction
             _userReponsitory.Add(user);
             //3 create jwt token
 
-            var token = _jwtTokenGenerator.GenerateToken( user.Id, lastname, firstname);
+            var token = _jwtTokenGenerator.GenerateToken( user);
             
             return new AuthentiactionResult(
-                user.Id,
+               /* user.Id,
                 lastname,
                 firstname,
-                email,
+                email,*/
+                user,
                 token); ;
         }
 
@@ -51,15 +52,16 @@ namespace BuberDinner.Application.Services.Authentiaction
             }
             // 2. validate the password is correct]
             if(user.Password != password) {
-                throw new Exception("Invalid password")
+                throw new Exception("Invalid password");
              }
             // 3. Create Jwt token
-            var token = _jwtTokenGenerator.GenerateToken(user.Id, user.FirstName, user.LastName);
+            var token = _jwtTokenGenerator.GenerateToken(user);
             return new AuthentiactionResult(
-                user.Id,
+                /*user.Id,
                 user.FirstName,
                 user.LastName,
-                email,
+                email,*/
+                user,
                 token) ;
         }
 
